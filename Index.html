@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON HEARTS | Find Your Signal</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 28px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  background:
+    radial-gradient(ellipse at 15% 20%, #102b42 0, transparent 45%),
+    radial-gradient(ellipse at 85% 80%, #35112f 0, transparent 45%),
+    #070810;
+}
+
+main { width: 100%; max-width: 850px; }
+
+.eyebrow {
+  text-align: center;
+  color: #a3a7bb;
+  letter-spacing: 5px;
+  font-size: 11px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(30px, 7vw, 54px);
+  letter-spacing: 4px;
+  margin: 0 0 12px;
+}
+
+.intro {
+  text-align: center;
+  color: #b6b8ca;
+  margin: 0 0 36px;
+  font-size: 14px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  min-height: 245px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(145deg, #131725, #0a0b13);
+  border: 1px solid var(--neon);
+  border-radius: 18px;
+  box-shadow: 0 0 18px var(--glow),
+              inset 0 0 22px #ffffff05;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px var(--glow);
+}
+
+.blue { --neon: #43ddf5; --glow: #43ddf533; }
+.pink { --neon: #f04cc5; --glow: #f04cc533; }
+
+.symbol {
+  font-size: 40px;
+  color: var(--neon);
+  text-shadow: 0 0 16px var(--glow);
+}
+
+h2 {
+  color: var(--neon);
+  font-size: clamp(17px, 3.5vw, 25px);
+  letter-spacing: 1px;
+  margin: 18px 0 10px;
+}
+
+.description {
+  color: #b8bacb;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.action {
+  margin-top: 24px;
+  color: var(--neon);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+footer {
+  margin-top: 32px;
+  text-align: center;
+  color: #777b91;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 480px) {
+  .cards { grid-template-columns: 1fr; }
+  .card { min-height: 210px; }
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">YOUR NEXT CONNECTION STARTS HERE</div>
+  <h1>NEON <span style="color:#43ddf5">HEARTS</span></h1>
+  <p class="intro">Two worlds. One connection. Find your signal.</p>
+
+  <section class="cards">
+    <a class="card blue"
+       href="https://www.instagram.com/"
+       target="_blank" rel="noopener noreferrer">
+      <div class="symbol">⌁</div>
+      <div>
+        <h2>NEON HEARTS</h2>
+        <div class="description">CONNECT TO SOMEONE<br>
+          Meet someone beyond the ordinary.</div>
+      </div>
+      <div class="action">OPEN INSTAGRAM ↗</div>
+    </a>
+
+    <a class="card pink"
+       href="https://line.me/"
+       target="_blank" rel="noopener noreferrer">
+      <div class="symbol">♡</div>
+      <div>
+        <h2>FIND YOUR SIGNAL</h2>
+        <div class="description">A CONNECTION BEYOND THE SCREEN<br>
+          Your next conversation starts here.</div>
+      </div>
+      <div class="action">CONNECT ON LINE ↗</div>
+    </a>
+  </section>
+
+  <footer>STAY CONNECTED · STAY NEON</footer>
+</main>
+</body>
+</html>
